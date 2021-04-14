@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="#">
+    <title>Movie Search</title>
+</head>
+
+<body>
+    <header>
+        <div class="Cambria">
+            <h1>Movie Mania!</h1>
+
+                                
+        </div>
+        <!-- Search Bar -->
+     
+      <input type="text" id="search" class="search"><br><button type="submit" id="submit" class="submit">Search</button>
+                      <div class="drop-content show-content"></div>
+  <button class="btn-toggle" id="toggler">Dark Mode</button>
+        </div>
+        <div>
+
+            </div>
+        <!-- END OF Search Bar -->
+    </header>
+    <main>
+        <div class="row">
+            <div class="col l12 movies">
+            </div>
+        </div>
+    </main>
+
+    <!-- modal -->
+    <div class="modal-container hide">
+        <div class="modal-contents">
+
+            <!-- movie poster -->
+            <div class="image"></div>
+
+            <figure class="modal-text">
+                <!-- movie video -->
+                <div class="video"></div>
+                <!-- movie info, button, and imdb link -->
+                <figcaption>
+                    <div class="movie-description">
+                        <h3>Info: </h3>
+                        <p class="movie-overview"></p>
+                    </div>
+                    <div class="movie-link">
+                        <button type="button" class="btn" id="btn-close">back to search</button>
+                        <div class="imbd">
+                            <a href="https://www.imdb.com/" target="_blank">visit imdb for more >></a>
+                        </div>
+                    </div>
+                </figcaption>
+
+            </figure>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
